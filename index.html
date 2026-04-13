@@ -22,6 +22,7 @@
       padding: 40px;
       border-radius: 16px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      min-width: 280px;
     }
 
     h1 {
@@ -35,9 +36,10 @@
     }
 
     .btn {
-      display: inline-block;
+      display: block;
+      width: 220px;
+      margin: 10px auto;
       padding: 12px 24px;
-      background: #22c55e;
       color: white;
       text-decoration: none;
       border-radius: 10px;
@@ -45,8 +47,20 @@
       transition: 0.2s ease;
     }
 
-    .btn:hover {
+    .mega {
+      background: #22c55e;
+    }
+
+    .mega:hover {
       background: #16a34a;
+    }
+
+    .gofile {
+      background: #3b82f6;
+    }
+
+    .gofile:hover {
+      background: #2563eb;
     }
   </style>
 </head>
@@ -54,10 +68,14 @@
 
   <div class="container">
     <h1>Firefox.dmg</h1>
-    <p>Click below to download the file</p>
+    <p>Choose a download source</p>
     
-    <a class="btn" href="https://mega.nz/file/6SZXyIIT#jjuVpjmMv_WrTGz5twN-tTSsP23ZoEQR0JPq_eOGblo" target="_blank">
+    <a class="btn mega" href="https://mega.nz/file/6SZXyIIT#jjuVpjmMv_WrTGz5twN-tTSsP23ZoEQR0JPq_eOGblo" target="_blank">
       Download on MEGA
+    </a>
+
+    <a class="btn gofile" href="https://gofile.io/d/Yo53kE" target="_blank">
+      Download on GoFile
     </a>
   </div>
 
