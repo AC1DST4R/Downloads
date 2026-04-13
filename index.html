@@ -12,8 +12,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
+      padding: 20px;
     }
 
     .container {
@@ -22,16 +23,17 @@
       padding: 40px;
       border-radius: 16px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-      min-width: 280px;
+      width: 320px;
+      margin: 10px;
     }
 
     h1 {
       margin-bottom: 10px;
-      font-size: 28px;
+      font-size: 26px;
     }
 
     p {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       color: #94a3b8;
     }
 
@@ -62,21 +64,47 @@
     .gofile:hover {
       background: #2563eb;
     }
+
+    .wrapper {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Firefox.dmg</h1>
-    <p>Choose a download source</p>
-    
-    <a class="btn mega" href="https://mega.nz/file/6SZXyIIT#jjuVpjmMv_WrTGz5twN-tTSsP23ZoEQR0JPq_eOGblo" target="_blank">
-      Download on MEGA
-    </a>
+  <div class="wrapper">
 
-    <a class="btn gofile" href="https://gofile.io/d/Yo53kE" target="_blank">
-      Download on GoFile
-    </a>
+    <!-- Firefox -->
+    <div class="container">
+      <h1>Firefox.dmg</h1>
+      <p>Choose a download source</p>
+
+      <a class="btn mega" href="https://mega.nz/file/6SZXyIIT#jjuVpjmMv_WrTGz5twN-tTSsP23ZoEQR0JPq_eOGblo" target="_blank">
+        Download on MEGA
+      </a>
+
+      <a class="btn gofile" href="https://gofile.io/d/Yo53kE" target="_blank">
+        Download on GoFile
+      </a>
+    </div>
+
+    <!-- Roblox -->
+    <div class="container">
+      <h1>Roblox.dmg</h1>
+      <p>Choose a download source</p>
+
+      <a class="btn mega" href="https://mega.nz/file/KLonVSrB#EmBZF4whpnuxM5vykyy9YPrXGke9c0Xox_CkH3bPJ2U" target="_blank">
+        Download on MEGA
+      </a>
+
+      <a class="btn gofile" href="https://gofile.io/d/eSYwb4" target="_blank">
+        Download on GoFile
+      </a>
+    </div>
+
   </div>
 
 </body>
